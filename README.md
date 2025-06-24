@@ -57,7 +57,6 @@ The project is architected as a modular pipeline, separating data preprocessing,
 
 ```mermaid
 graph TD
-    %% Define Nodes and Subgraphs First
     subgraph Data Layer
         A1[IVolatility API]
         A2[CBOE VIX Data]
@@ -67,23 +66,22 @@ graph TD
     subgraph Preprocessing & Feature Engineering
         B[Data Pipelines]
         C{Options Backtesting Framework}
-        D[Consolidated Feature Dataset (.parquet)]
+        D["Consolidated Feature Dataset (.parquet)"]
     end
     
     subgraph Machine Learning Core
         E[Walk-Forward Orchestrator]
         F{Genetic Algorithm}
-        G[XGBoost Classifier w/ Optuna]
+        G["XGBoost Classifier w/ Optuna"]
         H[Out-of-Sample Predictions]
     end
     
     subgraph Analysis & Output
         I[Combined Equity Curve]
-        J[Performance Metrics & SHAP Analysis]
+        J["Performance Metrics & SHAP Analysis"]
         K[Final Confidence Score]
     end
 
-    %% Define All Links at the End
     A1 --> B
     A2 --> B
     A3 --> B
