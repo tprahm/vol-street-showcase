@@ -96,6 +96,7 @@ graph TD
     H --> J
     I --> K
     J --> K
+```
 
 <details>
 <summary><b>Technical Deep Dive: Key Code Components</b></summary>
