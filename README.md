@@ -98,7 +98,7 @@ graph TD
     J --> K
 ```
 
-<summary><b>Technical Deep Dive: Key Code Components</b></summary>
+## Technical Deep Dive: Key Code Components
 
 ### Backtesting Framework & Data Pipeline
 
