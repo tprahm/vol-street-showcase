@@ -35,7 +35,7 @@ This plot showcases the research engine's core strength: optimizing on <strong>t
 </p>
 <p align="center">
   <a href="ga_landscape.html">
-    <img src="images/UMAP_preview.jpg" width="700" alt="Interactive 3D UMAP Visualization of GA Fitness Landscape">
+    <img src="images/UMAP_preview.png" width="700" alt="Interactive 3D UMAP Visualization of GA Fitness Landscape">
   </a>
 </p>
 <p align="center" style="max-width: 700px; margin: auto; text-align: left;">
