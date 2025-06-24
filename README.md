@@ -64,21 +64,29 @@ graph TD
     end
 
     subgraph Preprocessing & Feature Engineering
-        B[Data Pipelines] --> C{Options Backtesting Framework}
-        A1 & A2 & A3 --> B
+        B[Data Pipelines]
+        A1 --> B
+        A2 --> B
+        A3 --> B
+        B --> C{Options Backtesting Framework}
         C --> D[Consolidated Feature Dataset (.parquet)]
     end
     
     subgraph Machine Learning Core
-        E[Walk-Forward Orchestrator] --> F{Genetic Algorithm}
+        E[Walk-Forward Orchestrator]
         D --> E
+        E --> F{Genetic Algorithm}
         F --> G[XGBoost Classifier w/ Optuna]
         G --> F
         G --> H[Out-of-Sample Predictions]
     end
     
     subgraph Analysis & Output
-        H --> I[Combined Equity Curve]
-        H --> J[Performance Metrics & SHAP Analysis]
-        I & J --> K[Final Confidence Score]
+        I[Combined Equity Curve]
+        J[Performance Metrics & SHAP Analysis]
+        K[Final Confidence Score]
+        H --> I
+        H --> J
+        I --> K
+        J --> K
     end
