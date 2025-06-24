@@ -30,16 +30,11 @@ This plot showcases the research engine's core strength: optimizing on <strong>t
 </p>
 
 <p align="center">
-  <em>Interactive Analysis: 3D Genetic Algorithm Fitness Landscape</em><br>
-  <strong>(Click the image below to explore the fully interactive 3D visualization)</strong>
-</p>
-<p align="center">
-  <a href="https://tprahm.github.io/vol-street-showcase/docs/ga_landscape.html">
-    <img src="images/UMAP_preview.png" width="700" alt="Interactive 3D UMAP Visualization of GA Fitness Landscape">
-  </a>
+  <em>3D Visualization of Genetic Algorithm Fitness Landscape</em><br>
+  <img src="images/UMAP_preview.png" width="700" alt="3D UMAP Visualization of GA Fitness Landscape">
 </p>
 <p align="center" style="max-width: 700px; margin: auto; text-align: left;">
-Each point in this 3D landscape represents a unique feature set, colored by its generation (purple=early, yellow=latest). Its height on the Y-axis reflects its fitness score (a blend of Sortino and Calmar ratios). The visualization proves the algorithm's effectiveness, as later generations consistently trend higher, discovering more robust and profitable feature combinations.
+Each point in this 3D landscape represents a unique feature set (an individual), colored by its generation. Its height on the Y-axis reflects its fitness score (a blend of Sortino and Calmar ratios). The visualization demonstrates the evolutionary process, as later generations (brighter yellow) trend higher, discovering more robust and profitable feature combinations.
 </p>
 
 ---
