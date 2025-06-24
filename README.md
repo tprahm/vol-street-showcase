@@ -21,13 +21,25 @@ The platform's output is a "confidence score" (0-100) indicating the model's con
 </p>
 
 <p align="center" style="max-width: 700px; margin: auto; text-align: left;">
-This plot showcases the research engine's core strength: optimizing on **truly out-of-sample (OOS) returns.** Each grey line is the equity curve of a unique individual (a feature set) being evaluated through its own **full walk-forward backtest.** The underlying strategy—a 5-day long position in VIXY (ProShares VIX Short-Term Futures ETF) triggered at >=60% model confidence—is always tested on unseen data. The visible improvement across generations demonstrates a robust process for discovering alpha, not just a curve-fit result, culminating in the optimal feature set highlighted in red.
+This plot showcases the research engine's core strength: optimizing on <strong>truly out-of-sample (OOS) returns.</strong> Each grey line is the equity curve of a unique individual (a feature set) being evaluated through its own <strong>full walk-forward backtest.</strong> The underlying strategy—a 5-day long position in VIXY (ProShares VIX Short-Term Futures ETF) triggered at >=60% model confidence—is always tested on unseen data. The visible improvement across generations demonstrates a robust process for discovering alpha, not just a curve-fit result, culminating in the optimal feature set highlighted in red.
 </p>
 
 <p align="center">
-  <em>(Left) SHAP Summary Plot identifying top predictive features. (Right) Genetic Algorithm fitness evolution over generations.</em><br>
-  <img src="images/feature_shap_summary.png" width="400" alt="SHAP Feature Importance Plot">
-  <img src="images/ga_fitness.png" width="400" alt="Genetic Algorithm Fitness Evolution">
+  <em>SHAP Summary Plot identifying top predictive features for model explainability.</em><br>
+  <img src="images/feature_shap_summary.png" width="600" alt="SHAP Feature Importance Plot">
+</p>
+
+<p align="center">
+  <em>Interactive Analysis: 3D Genetic Algorithm Fitness Landscape</em><br>
+  <strong>(Click the image below to explore the fully interactive 3D visualization)</strong>
+</p>
+<p align="center">
+  <a href="https://tprahm.github.io/vol-street-showcase/ga_landscape.html">
+    <img src="images/UMAP_preview.jpg" width="700" alt="Interactive 3D UMAP Visualization of GA Fitness Landscape">
+  </a>
+</p>
+<p align="center" style="max-width: 700px; margin: auto; text-align: left;">
+Each point in this 3D landscape represents a unique feature set, colored by its generation (purple=early, yellow=latest). Its height on the Y-axis reflects its fitness score (a blend of Sortino and Calmar ratios). The visualization proves the algorithm's effectiveness, as later generations consistently trend higher, discovering more robust and profitable feature combinations.
 </p>
 
 ---
