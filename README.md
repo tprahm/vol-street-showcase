@@ -34,7 +34,7 @@ This plot showcases the research engine's core strength: optimizing on <strong>t
   <strong>(Click the image below to explore the fully interactive 3D visualization)</strong>
 </p>
 <p align="center">
-  <a href="docs/ga_landscape.html">
+  <a href="https://tprahm.github.io/vol-street-showcase/docs/ga_landscape.html">
     <img src="images/UMAP_preview.png" width="700" alt="Interactive 3D UMAP Visualization of GA Fitness Landscape">
   </a>
 </p>
