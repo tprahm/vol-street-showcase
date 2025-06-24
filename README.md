@@ -98,7 +98,6 @@ graph TD
     J --> K
 ```
 
-<details>
 <summary><b>Technical Deep Dive: Key Code Components</b></summary>
 
 ### Backtesting Framework & Data Pipeline
@@ -127,8 +126,6 @@ The features used by the ML model are not just raw market data; many are generat
 - **Training & Prediction Core:** The computational heart of the backtester. It handles the detailed walk-forward logic (rolling/expanding windows), feature scaling, model training, prediction, and signal generation based on confidence thresholds.
 
 - **Hyperparameter Optimization (Optuna):** Implements the hyperparameter search using Optuna. It defines a complex objective function that can be weighted to optimize for Sortino ratio, profit, and other financial metrics.
-
-</details>
 
 ## Key Technologies
 
